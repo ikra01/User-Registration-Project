@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+}
+.container{
+    background-image: linear-gradient( 109.6deg,  rgba(247,202,201,1) 20.6%, rgba(146,168,209,1) 85.9% );
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Sans', serif;
+
+}
+.invalid input {
+    border-color: #d93025;
+  }
+
+
+span{
+    display:none;
+    margin-left: 2px;
+    margin-top: 7px;
+    font-size: 15px;
+}
+span p{
+    font-weight: 30px;
+}
+.icon{
+    margin-right:4px;
+
+}
+
+
+input:invalid[focused="true"] ~ span{
+    color:red;
+    display: flex;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+  
+.innerContainer{
+    background-color: #fff;
+    border: 0.1px solid #fff;
+    border-radius: 5px;
+    width: 40rem;
+    padding: 4rem;
+    max-width: 100%;  
+}
+
+.text-content h1{
+    text-align: center;
+    color:#8F82B4;
+ }
+
+.title-first{
+    margin-top: 1rem;
+ }
+
+.title-second{
+    margin-bottom:3rem;
+ }
+
+.form-content .input-field input{
+    height: 45px;
+    border: 1px solid #ccc;
+    width: 100%;    
+    border-radius: 5px;
+    padding-left:15px;
+    border-bottom-width: 2px;
+    font-size: 16px; 
+    outline: none;
+ }
+
+.container form .form-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .form-content .input-field{
+width: calc(100% /2 - 40px);
+margin-bottom: 25px;
+}
+
+.form-content .input-field label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container .subscribe input{
+margin-right: 12px;
+width: 15px;
+margin-bottom: 10px;
+}
+
+.container .subscribe label{
+    font-size: 14px;
+}
+
+
+form .reg-button{
+    height:20px;
+    margin-top: 10px;
+}
+
+form .reg-button button{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 32px;
+    padding-top: 15px;
+    background: linear-gradient( 109.6deg,  rgba(247,202,201,1) 20.6%, rgba(146,168,209,1) 85.9% );
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'PT Sans', serif;
+    letter-spacing: 1px;
+
+}
+    
+form .reg-button button:hover{
+    background: linear-gradient( -109.6deg,  rgba(247,202,201,1) 20.6%, rgba(146,168,209,1) 85.9% );
+    cursor: pointer;
+}
